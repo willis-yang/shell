@@ -1,2 +1,5 @@
 # shell
-shell tools
+## docker
+```
+install.sh // install docker && start docker
+```
