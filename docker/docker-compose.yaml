@@ -1,0 +1,25 @@
+#docker composer template
+version: '3'
+  services:
+    service1:
+      image: "镜像"
+      container_name: "容器名"
+      ports:
+        - "宿主机端口:容器端口"
+      command: "命令"
+      volumes:
+        - "宿主机路径:容器路径"
+      environment:
+        - "环境变量"
+      restart: always
+      networks:
+        - "网络名"
+networks:
+  net1:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: "子网"
+        gateway: "网关"
+        aux_addresses: {}
